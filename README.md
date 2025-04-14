@@ -1,6 +1,15 @@
+<!-- written by Shadowdara -->
+<!-- https://github.com/weuritz8u/dev-envirment -->
+
 # Webenv-Creator
 
 *Yeah, you need lua for this ;)*
+
+***Please: Only us this for new project, the script eventually
+delete something!!!***
+
+Copy one of the `.lua` files in your new project
+folder and run it with lua.
 
 ## Info
 
@@ -63,17 +72,63 @@ start "" "C:\D4R4\.can_delete\Microsoft VS Code\Code.exe" "%cd%"
 `C:\D4R4\.can_delete\Microsoft VS Code\Code.exe` is the
 used folder path, replace it with your folder path.
 
-finished!
+*Last Edited: 14.04.2025*
 
-## Contributing
+
+<h2 id="gitignore">gitignore</h2>
+
+The Lua file creators are automaticly creating a `.gitignore` file
+for the file that are not required for the project ;)
+
+
+<h2 href="contributing">Contributing</h2>
 
 feel free to contribute and add your Stuff :)
 
-## License
+just fork the repository, add your stuff and then create a
+pull request, but please document what you are added what it
+is used for.
 
-MIT: Shadowdara
 
-### Used:
+<h2 id="license">License</h2>
+
+
+### License for using
+
+**`None`**
+
+but it would be very cool and appreciated if you would credit this Github
+Repository to help it growing and adding more usefull Stuff for other
+people, but not required.
+
+
+### License for republishing:
+
+MIT License
+
+Copyright (c) 2025 Shadowdara
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+### Used Files
+
 
 #### Local-HTTP-Server
 
@@ -99,12 +154,15 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+
 ## End
 
 Made by:
 
 - Shadowdara
+- weuritz8u
 
 ***Thank you for everybody for contributing***
 
-**Made with ❤️**
+
+## **Made with ❤️**

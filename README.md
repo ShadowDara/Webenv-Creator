@@ -11,13 +11,21 @@ delete something!!!***
 Copy one of the `.lua` files in your new project
 folder and run it with lua.
 
+## Requirements
+
+- Lua
+- Python
+- Batch
+
 ## Info
 
 This is a simple lua script which creates a web envirment
 for you. After running the script the in your new project
 folder, some new files will be created!
 
-run `run_server_for_testing.bat` to create a local HTTP Server
+run `create_web_env.lua` and then there should be new files!
+
+run `start.bat` to create a local HTTP Server
 in your project folder
 
 This will start a `HTTP Server` with Python in the root directory
@@ -43,6 +51,7 @@ then it will open your project folder in `Visual Studio Code`
     start.bat
 
     index.html
+    404.html
 ```
 
 *ignore it, if you have already renamed the `other_vs_code.md`
@@ -71,6 +80,13 @@ start "" "C:\D4R4\.can_delete\Microsoft VS Code\Code.exe" "%cd%"
 
 `C:\D4R4\.can_delete\Microsoft VS Code\Code.exe` is the
 used folder path, replace it with your folder path.
+
+
+## Why there are 2 404 files
+
+The `404-2.html` redirects you directly back to the homepage, personally
+i like this method. Just rename it to `404.html` and the delete the old
+`404.html` or delete the `404-2.html` file!
 
 *Last Edited: 14.04.2025*
 
@@ -162,7 +178,7 @@ Made by:
 - Shadowdara
 - weuritz8u
 
-***Thank you for everybody for contributing***
-
 
 ## **Made with ❤️**
+
+<h4><a href="https://github.com/weuritz8u/projectlist" target="_blank" rel="noopener noreferrer">More Envirment Creator</a></h4>

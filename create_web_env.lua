@@ -4,6 +4,7 @@
 -- variables
 local gitignore_c = [[
 # ignore lua creator
+start.bat
 create_web_env.lua
 create_web_env_info.md
 dev_envirment_dara/

@@ -1,13 +1,14 @@
 -- script written by Shadowdara
+-- MIT License
 
 -- variables
-gitignore_c = "# ignore lua creator\ncreate_web_env.lua"
+gitignore_c = "# ignore lua creator\ncreate_web_env.lua\ncreate_web_env_info.md\ndev_envirment_dara/"
 index_html_c = ""
 z404_html_c = ""
 style_css_c = ""
 start_bat_c = ""
 http_server_oy_c = ""
-localhost_8000_c = ""
+localhost_8000_c = "<meta http-equiv="refresh" content="0.1;url=http://localhost:8000">"
 other_vs_code_md_c = ""
 create_web_env_info_md_c = ""
 

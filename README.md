@@ -25,6 +25,9 @@ folder, some new files will be created!
 
 run `create_web_env.lua` and then there should be new files!
 
+
+## Then to use
+
 run `start.bat` to create a local HTTP Server
 in your project folder
 
@@ -38,7 +41,8 @@ then it will open your project folder in `Visual Studio Code`
 
 ***Explanation for other VSCode down below***
 
-**Your folder path should now look like this:**
+
+## Your folder path should now look like this
 
 ```
 'project-root-folder'/

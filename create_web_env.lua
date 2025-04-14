@@ -51,6 +51,93 @@ local index_html_c = [[
 </html>
 ]]
 
+local style_css_c = [[
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin: 4rem;
+}
+
+header {
+    margin: 0px;
+    padding: 0.5rem;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #191919;
+    text-align: right;
+}
+
+footer {
+    margin: 0px;
+    padding: 0.5rem;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #191919;
+}
+
+header p, footer p {
+    display: inline;
+    font-size: 1.1rem;
+    margin: 0 5% auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff9800;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a {
+    color: rgb(255, 187, 141);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: rgb(255, 102, 0);
+}
+]]
+
 local z404_html_c = [[
 <!DOCTYPE html>
 <html lang="en">
@@ -181,7 +268,7 @@ create_file('index.html', index_html_c)
 create_file('404.html', index_html_c)
 create_file('404-2.html', z404_html_c)
 create_file('src/page.html', index_html_c)
-create_file('src/style.css', '')
+create_file('src/style.css', style_css_c)
 create_file('start.bat', start_bat_c)
 create_file('dev_envirment_dara/http_server.py', http_server_oy_c)
 create_file('dev_envirment_dara/localhost_8000.htm', localhost_8000_c)

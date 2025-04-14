@@ -125,7 +125,7 @@ local function create_file(name, content)
 end
 
 -- run on execution
---os.write("Web Envirment Setup by Shadowdara\n\n")
+io.write("Web Envirment Setup by Shadowdara\n\n")
 
 -- creating all files
 os.execute("mkdir dev_envirment_dara")
@@ -145,5 +145,5 @@ create_file('dev_envirment_dara/other_vs_code.md', other_vs_code_md_c)
 create_file('create_web_env_info.md', create_web_env_info_md_c)
 
 -- finish
---os.write("Created all files!\nRun start.bat to start!\nYou can delete this lua file now!\nYou can although delete create_web_env_info.md\n\nPress Enter to Exit")
---io.read()
+io.write("Created all files!\nRun start.bat to start!\nYou can delete this lua file now!\nYou can although delete create_web_env_info.md\n\nPress Enter to Exit")
+io.read()

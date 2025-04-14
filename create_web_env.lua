@@ -4,10 +4,12 @@
 gitignore_c = "# ignore lua creator\ncreate_web_env.lua"
 index_html_c = ""
 z404_html_c = ""
+style_css_c = ""
 start_bat_c = ""
 http_server_oy_c = ""
 localhost_8000_c = ""
 other_vs_code_md_c = ""
+create_web_env_info_md_c = ""
 
 -- functions
 function create_file(name, content)
@@ -16,16 +18,19 @@ function create_file(name, content)
     file:close()
 
 -- run on execution
-os.write("Web Envirment Setup by Shadowdara")
+os.write("Web Envirment Setup by Shadowdara\n\n")
 
 -- creating all files
 create_file('.gitignore', gitignore_c)
 create_file('index.html', index_html_c)
 create_file('404.html', z404_html_c)
+create_file('style.css', style_css_c)
 create_file('start.bat', start_bat_c)
 create_file('http_server.py', http_server_oy_c)
 create_file('localhost_8000.htm', localhost_8000_c)
 create_file('other_vs_code.md', other_vs_code_md_c)
+create_file('create_web_env_info.md', create_web_env_info_md_c)
 
 -- finish
-os.write("Created all files!)
+os.write("Created all files!\nRun start.bat to start!\nYou can delete this lua file now!\nYou can although delete create_web_env_info.md\n\nPress Enter to Exit)
+io.read()

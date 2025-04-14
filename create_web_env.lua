@@ -6,7 +6,7 @@ gitignore_c = "# ignore lua creator\ncreate_web_env.lua\ncreate_web_env_info.md\
 index_html_c = ""
 z404_html_c = ""
 style_css_c = ""
-start_bat_c = ""
+start_bat_c = ":: purpose is only for testing!\n\nstart python "%cd\dev_envirment_dara\http_server.py"\n\ndev_envirment_dara\localhost_8000.htm\n\nset "datei=dev_envirment_dara\other_vs_code"\n\nif exist "%~dp0%datei%" (\n\tstart "" "C:\D4R4\.can_delete\Microsoft VS Code\Code.exe" "%cd%"\n)\nelse (\n\tstart code "%cd%"\n)\n"
 http_server_oy_c = ""
 localhost_8000_c = "<meta http-equiv="refresh" content="0.1;url=http://localhost:8000">"
 other_vs_code_md_c = "# Other VSCode\n\nIf you have installed VSCode in another directory and\nwant to use this installation, change the name of this\nfile from `other_vs_code.md` to `other_vs_code` and\nopen the `run_server_for_testing.bat` file and check\nline 10.\n\n```\nstart "" "C:\D4R4\.can_delete\Microsoft VS Code\Code.exe" "%cd%"\n```\n\n`C:\D4R4\.can_delete\Microsoft VS Code\Code.exe` is the\nused folder path, replace it with your folder path.\n\nfinished!\n"

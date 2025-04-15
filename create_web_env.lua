@@ -177,7 +177,9 @@ local http_server_oy_c = [[
 # purpose is only for testing!
 
 import os
+import sys
 import http.server
+import socket
 import socketserver
 
 def path():
@@ -200,26 +202,26 @@ PORT = 8000
 
 while PORT <= 49140:
     if is_port_in_use(PORT):
-        do_print(f"Port {PORT} is busy, trying {PORT+1}")
+        print(f"Port {PORT} is busy, trying {PORT+1}")
         PORT += 1
 
     else:   
-            break
+        break
 
-    if PORT > 49140:
-        do_print("Kein freier Port gefunden, Server kann nicht gestartet werden!")
-        sys.exit(1)
+if PORT > 49140:
+    print("Kein freier Port gefunden, Server kann nicht gestartet werden!")
+    sys.exit(1)
 
-    try:
-        Handler = http.server.SimpleHTTPRequestHandler
+try:
+    Handler = http.server.SimpleHTTPRequestHandler
 
-        with socketserver.TCPServer(("", PORT), Handler) as httpd:
-	        print(f"Server läuft auf http://localhost:{PORT}\n")
-	        httpd.serve_forever()
+    with socketserver.TCPServer(("", PORT), Handler) as httpd:
+        print(f"Server läuft auf http://localhost:{PORT}\n")
+        httpd.serve_forever()
 
-    except:
-        do_print(f"Port {PORT} is busy")
-        sys.exit(1)
+except:
+    print(f"Port {PORT} is busy")
+    sys.exit(1)
 ]]
 
 local localhost_8000_c = [[

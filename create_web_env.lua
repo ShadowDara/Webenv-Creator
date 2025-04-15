@@ -248,16 +248,23 @@ finished!
 ]]
 
 -- functions
-local function create_file(name, content)
-    local file, err = io.open(name, "w")
-    if not file then
-        print("Error while opening the file!:", err)
-        return false
+-- Helper function to ask user
+local function ask_create_file(filename, content)
+    print("Do you want to create the file: " .. filename .. "? (y/n)")
+    local answer = io.read()
+    if answer:lower() == "y" then
+      local file = io.open(filename, "w")
+      if file then
+        file:write(content)
+        file:close()
+        print("created file: " .. filename)
+      else
+        print("Error while creating: " .. filename)
+      end
+    else
+      print("⏭ skipped file: " .. filename)
     end
-    file:write(content)
-    file:close()
-    return true
-end
+  end
 
 -- run on execution
 io.write("Web Envirment Setup by Shadowdara\n\n")
@@ -266,16 +273,16 @@ io.write("Web Envirment Setup by Shadowdara\n\n")
 os.execute("mkdir dev_envirment_dara")
 os.execute("mkdir src")
 
-create_file('.gitignore', gitignore_c)
-create_file('index.html', index_html_c)
-create_file('404.html', index_html_c)
-create_file('404-2.html', z404_html_c)
-create_file('src/page.html', index_html_c)
-create_file('src/style.css', style_css_c)
-create_file('start.bat', start_bat_c)
-create_file('dev_envirment_dara/http_server.py', http_server_oy_c)
-create_file('dev_envirment_dara/localhost_8000.htm', localhost_8000_c)
-create_file('dev_envirment_dara/other_vs_code.md', other_vs_code_md_c)
+ask_create_file('.gitignore', gitignore_c)
+ask_create_file('index.html', index_html_c)
+ask_create_file('404.html', index_html_c)
+ask_create_file('404-2.html', z404_html_c)
+ask_create_file('src/page.html', index_html_c)
+ask_create_file('src/style.css', style_css_c)
+ask_create_file('start.bat', start_bat_c)
+ask_create_file('dev_envirment_dara/http_server.py', http_server_oy_c)
+ask_create_file('dev_envirment_dara/localhost_8000.htm', localhost_8000_c)
+ask_create_file('dev_envirment_dara/other_vs_code.md', other_vs_code_md_c)
 
 -- finish
 io.write("Created all files!\nRun start.bat to start!\nYou can delete this lua file now!\nYou can although delete create_web_env_info.md\n\nPress Enter to Exit")

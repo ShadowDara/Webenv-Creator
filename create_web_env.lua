@@ -250,7 +250,7 @@ finished!
 -- functions
 -- Helper function to ask user
 local function ask_create_file(filename, content)
-    print("Do you want to create the file: " .. filename .. "? (y/n)")
+    print("\nDo you want to create the file: " .. filename .. "? (y/n)")
     local answer = io.read()
     if answer:lower() == "y" then
       local file = io.open(filename, "w")

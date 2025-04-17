@@ -209,14 +209,14 @@ while PORT <= 49140:
         break
 
 if PORT > 49140:
-    print("Kein freier Port gefunden, Server kann nicht gestartet werden!")
+    print("No usable Port found, Server could not start!")
     sys.exit(1)
 
 try:
     Handler = http.server.SimpleHTTPRequestHandler
 
     with socketserver.TCPServer(("", PORT), Handler) as httpd:
-        print(f"Server läuft auf http://localhost:{PORT}\n")
+        print(f"Server is running on http://localhost:{PORT}\n")
         httpd.serve_forever()
 
 except:
